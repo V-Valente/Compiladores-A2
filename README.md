@@ -1,4 +1,4 @@
-# Compilador MiniLang
+Compilador MiniLang
 
 *Trabalho A2 da disciplina de Compiladores*
 
@@ -136,6 +136,10 @@ BLOCK_COMMENT: '/*' .*? '*/' -> channel(HIDDEN);
 ## Interface Gráfica (Front-end Web)
 
 Além da linha de comando, o projeto conta com uma interface web moderna e interativa desenvolvida com **Streamlit**. Essa ferramenta facilita a visualização das estruturas internas do compilador sem a necessidade de analisar logs de texto.
+
+<img width="1366" height="619" alt="image" src="https://github.com/user-attachments/assets/3fb07f33-1051-4b5e-a133-4cdaff152dff" />
+<img width="1366" height="645" alt="image" src="https://github.com/user-attachments/assets/128ad2a7-6eb9-4e72-9425-32adcd2bc91f" />
+
 
 ### Funcionalidades da Interface
 * Editor de Código: Digite ou cole seu código MiniLang diretamente no navegador.
