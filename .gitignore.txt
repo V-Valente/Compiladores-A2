@@ -1,14 +1,1 @@
-# Ignorar arquivos de cache do Python
-__pycache__/
-*.pyc
 
-# Ignorar arquivos de ambiente virtual (se tiver)
-venv/
-.env
-
-# Ignorar arquivos de sistema
-.DS_Store
-Thumbs.db
-
-# (Opcional) Se quiser ignorar o zip que criamos antes
-*.zip
