@@ -1,0 +1,5 @@
+{
+    // Erro: Falta ponto e vírgula na declaração
+    int x = 10
+    print(x);
+}

@@ -1,0 +1,13 @@
+{
+    int[] lista = new int[3];
+    
+    lista[0] = 10;
+    lista[1] = 20;
+    lista[2] = 30;
+
+    print(lista[1]); // OK: Imprime 20
+
+    // ERRO: O array tem indices 0, 1, 2.
+    // Acessar o indice 50 deve quebrar o programa.
+    print(lista[50]); 
+}

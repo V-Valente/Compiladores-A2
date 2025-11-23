@@ -1,0 +1,6 @@
+{
+    int a = 20;
+    
+    // Erro: A variável 'b' nunca foi criada
+    print(a + b);
+}

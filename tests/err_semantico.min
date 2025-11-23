@@ -1,0 +1,11 @@
+{
+    int numero = 10;
+    bool flag = true;
+    const int PI = 3;
+
+    // ERRO: Tentar somar int com bool
+    int resultado = numero + flag;
+
+    // Se passasse (não deve), daria erro aqui ao tentar mudar const
+    PI = 4;
+}

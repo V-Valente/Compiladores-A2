@@ -1,0 +1,18 @@
+{
+    int x = 10;
+    print(x); // Esperado: 10
+
+    if (true) {
+        // Declara uma NOVA variavel 'x' que esconde a externa
+        bool x = true; 
+        print(x); // Esperado: True (ou 1)
+        
+        if (true) {
+             int x = 999;
+             print(x); // Esperado: 999
+        }
+    }
+
+    // De volta ao escopo principal, x deve ser o original
+    print(x); // Esperado: 10
+}

@@ -1,0 +1,21 @@
+{
+    // Gera sequencia de Fibonacci
+    int max = 10;
+    int n1 = 0;
+    int n2 = 1;
+    int next;
+    int count = 0;
+
+    print(n1, n2); 
+
+    while (count < max) {
+        next = n1 + n2;
+        print(next);
+        
+        // Atualiza variaveis para o proximo ciclo
+        n1 = n2;
+        n2 = next;
+        
+        count = count + 1;
+    }
+}
