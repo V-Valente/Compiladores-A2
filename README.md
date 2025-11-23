@@ -39,7 +39,8 @@ O projeto está organizado em módulos independentes, separando claramente as de
 
 | Arquivo / Pasta | Descrição |
 | :--- | :--- |
-| `grammar/MiniLang.g4` | **O Coração da Linguagem.** Arquivo ANTLR que define as regras léxicas (tokens) e sintáticas (gramática). |
+| `grammar/MiniLang.g4` | **O Coração da Linguagem.** Arquivo ANTLR que define as regras léxicas (tokens) e sintáticas (gramática). Aqui dentro também temos as ferramentas do antlr. |
+| `src` | O codigo fonte|
 | `app.py` | **Interface Gráfica.** Aplicação Web (Streamlit) para testar o compilador visualmente. |
 | `tests/` | **Casos de Teste.** Contém scripts `.min` para validação |
 
@@ -55,7 +56,7 @@ O código-fonte (`src`) é o motor do compilador. Abaixo, a responsabilidade de 
 | **Integração** | `visitor.py` | Implementa o padrão *Visitor* para percorrer a árvore do ANTLR e construir a nossa AST limpa. |
 | **Análise** | `semantic.py` | Realiza a análise semântica: verificação de tipos, controle de escopo e regras de constantes. |
 | **Execução** | `interp.py` | Interpreta e executa a AST diretamente (simulação de máquina). |
-| **Transpilação** | `codegen.py` | Traduz a AST da MiniLang para código Python executável. |
+| **Tradução** | `codegen.py` | Traduz a AST da MiniLang para código Python executável. |
 | **Utilitários** | `pretty.py` | Gera a representação visual (ASCII) da árvore sintática. |
 | **Erros** | `error_listener.py` | Intercepta erros do ANTLR para fornecer mensagens amigáveis e interromper a compilação. |
 | **Gerados** | `generated/` | Contém o Lexer, Parser e Visitor base criados automaticamente pelo ANTLR4. |
