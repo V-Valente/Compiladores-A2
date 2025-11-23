@@ -62,7 +62,7 @@ O código-fonte (`src`) é o motor do compilador. Abaixo, a responsabilidade de 
 
 ---
 
-## 🔤 Gramática (ANTLR4)
+##  Gramática (ANTLR4)
 
 A linguagem foi definida formalmente no arquivo `grammar/MiniLang.g4`. A especificação abaixo utiliza a notação do ANTLR (EBNF), destacando o uso de **recursão à esquerda direta** para expressões matemáticas e **rótulos (#)** para a geração do padrão Visitor.
 
@@ -132,6 +132,28 @@ BLOCK_COMMENT: '/*' .*? '*/' -> channel(HIDDEN);
 ```
 </details>
 
+## Interface Gráfica (Front-end Web)
+
+Além da linha de comando, o projeto conta com uma interface web moderna e interativa desenvolvida com **Streamlit**. Essa ferramenta facilita a visualização das estruturas internas do compilador sem a necessidade de analisar logs de texto.
+
+### Funcionalidades da Interface
+* Editor de Código: Digite ou cole seu código MiniLang diretamente no navegador.
+* Upload de Arquivos: Suporte para arrastar e soltar arquivos `.min` (da pasta `tests/`).
+* Visualização da AST: Exibe a Árvore Sintática Abstrata de forma expansível e formatada.
+* Inspeção Semântica: Mostra a Tabela de Símbolos organizada por escopo, nome e tipo.
+* Execução em Tempo Real: Exibe a saída do Intérprete e o Código Python gerado lado a lado.
+
+### Como Acessar
+
+1. **Instale a dependência (se ainda não tiver):**
+   ```bash
+   pip install streamlit
+   ```
+2. **Inicie o servidor web: Na pasta raiz do projeto, execute:**
+     ```bash
+   streamlit run app.py
+   ```
+3. **Acesse: O navegador abrirá automaticamente. Caso contrário, acesse o link exibido no terminal (geralmente http://localhost:8501).**
 ## Como Rodar o Projeto
 
 ### 1. Instalação e Dependências
@@ -326,3 +348,4 @@ def __ml_run(env=None):
     return frames[0]
 ```
 </details>
+     
