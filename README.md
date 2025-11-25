@@ -357,3 +357,6 @@ def __ml_run(env=None):
 ## Demonstração em Vídeo
 
 [![Assista ao Vídeo](https://img.youtube.com/vi/DUn-yG0nNEo/0.jpg)](https://www.youtube.com/watch?v=DUn-yG0nNEo)
+
+## Link para o Colab
+https://colab.research.google.com/drive/1nxGNX4dIWhYbBf_Zvc3Iz2DGEc1xJx0p#scrollTo=1N1HomWPp1ed
