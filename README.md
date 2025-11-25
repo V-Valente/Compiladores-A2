@@ -291,7 +291,7 @@ A análise semântica gera uma tabela para rastrear identificadores, tipos e esc
 
 ### 3. Execução (Intérprete e Código Gerado)
 
-O programa é executado tanto pelo intérprete
+O programa é executado tanto pelo intérprete quanto pelo codegn
 
 **Saída do Intérprete:**
 <details> <summary style="color:#add8e6;font-weight:bold">Clique para ver a Saída do Intérprete do arquivo `ok_fibonacci.min`</summary>
